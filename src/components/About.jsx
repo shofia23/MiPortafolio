@@ -22,7 +22,11 @@ const About = () => {
               <div className="absolute -top-8 -left-8 w-32 h-32 border-4 border-pink"></div>
               <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-pink/20"></div>
               <div className="relative aspect-square overflow-hidden">
-                <img class="w-full h-full object-cover transition-all duration-500" alt="Sofía Peña Calderón - Diseñadora Gráfica" src="../img/sofia.jpg" />
+                <img
+                  class="w-full h-full object-cover transition-all duration-500"
+                  alt="Sofía Peña Calderón - Diseñadora Gráfica"
+                  src="/MiPortafolio/img/sofia.jpg"
+                />
                 <div className="absolute inset-0 bg-gradient-to-tr from-pink/40 to-transparent mix-blend-multiply"></div>
               </div>
             </div>
@@ -56,8 +60,8 @@ const About = () => {
                   <p className="text-sm text-cream/60">Integracion de contenidos digitales</p>
                 </div>
                 <div className="border-l-4 border-pink pl-4">
-                  <p className="text-3xl font-bold text-pink">Actualemnte</p>
-                  <p className="text-sm text-cream/60">Tecnologo Producción multimedia</p>
+                  <p className="text-3xl font-bold text-pink">Actualmente</p>
+                  <p className="text-sm text-cream/60">Tecnólogo Producción multimedia</p>
                 </div>
               </div>
 

@@ -21,101 +21,84 @@ import {
 /* ------------------------------ DATA ------------------------------ */
 const projects = [
   {
-        title: 'MAKING OFF',
-        category: 'Posters',
-        thumbnail: '../img/golpe1.jpg',
-        alt: 'Poster for Cosmic Club with vibrant cosmic theme',
-        description: 'El presente trabajo corresponde al making of de un filminuto, en el cual se documentó el proceso creativo y visual detrás de la producción. Las fotografías fueron cuidadosamente seleccionadas con la intención de diseñar un póster que capture la esencia de la historia y la atmósfera emocional del proyecto.',
-        media: [
-            { type: 'image', src: '../img/golpe2.jpg', alt: 'Poster for Cosmic Club with vibrant cosmic theme' },
-            { type: 'image', src: '../img/golpe3.jpg', alt: 'Cosmic Club Logo Concept' },
-            { type: 'image', src: '../img/golpe1.jpg', alt: 'Cosmic Club Logo Concept' },
-        ],
-        details: [
-          'Composición cromática',
-          'Intención estética y narrativa',
-          'Simbolismo visual',
-        ]
-      },
-      {
-        title: 'BOGOTÁ D.C',
-        category: 'Edición Poster',
-        thumbnail: '../img/bogota.jpg',
-        alt: 'Cover of Rebel Magazine with a punk rock design',
-        description: 'Este póster está inspirado en la ciudad de Bogotá, Colombia, una urbe vibrante y llena de contrastes que combina lo tradicional con lo moderno. La imagen retrata a un joven músico que, con su guitarra en mano, busca abrirse camino en el mundo artístico y construir su carrera con esfuerzo, pasión y perseverancia. Su actitud refleja el espíritu bogotano: trabajador, soñador y resiliente.',
-        media: [
-          { type: 'image', src: '../img/bogota.jpg', alt: 'Rebel Magazine Cover' },
-        ],
-        details: [
-          'Inspiración urbana',
-          'Protagonismo del músico',
-          'Ambientacion Urbana y Punk',
-        ]
-      },
-      {
-        title: 'SILENCE PAIN',
-        category: 'Poster',
-        thumbnail: '../img/silence.jpg',
-        alt: 'Cyberpunk illustration of a futuristic city named Neon Dreams',
-        description: 'Este póster refleja la resiliencia de una persona ante las adversidades, mostrando a alguien que, pese a sus cicatrices, sigue creyendo que todo puede mejorar. Sus ojos vendados simbolizan esa fe ciega en el futuro, mientras que su postura erguida y brazos cruzados expresan fuerza y determinación. Sin embargo, su sombra de dolor lo acompaña siempre, recordando que la verdadera fortaleza no consiste en olvidar el sufrimiento, sino en aprender a convivir con él y transformarlo en poder.',
-        media: [
-            
-            { type: 'image', src: '../img/silence.jpg', alt: 'Cyberpunk city alley' },
-        ],
-        details: [
-          'Resiliencia',
-          'Fuerza y dolor',
-          'Colores fuertes',
-        ]
-      },
-      {
-        title: 'P0KER PICA A',
-        category: 'Fotografia',
-        thumbnail: '../img/collar1.jpg',
-        alt: 'Branding for Urban Beats music festival',
-        description: 'Esta fotografía surge como un ejercicio recreativo orientado a mejorar las habilidades tanto en la toma como en la edición de imágenes. Se trabajó con un diseño en blanco y negro, buscando resaltar los tonos plateados y dar protagonismo a los contrastes de luz y sombra. Este enfoque monocromático permite destacar la carta de póker, elemento central de la composición, que simboliza el azar, la estrategia y el misterio.',
-         media: [
-          { type: 'image', src: '../img/collar1.jpg', alt: 'Urban Beats festival crowd' },
-           { type: 'image', src: '../img/collar2.jpg', alt: 'Urban Beats festival crowd' },
-            { type: 'image', src: '../img/collar3.jpg', alt: 'Urban Beats festival crowd' },
-        ],
-        details: [
-          'Identidad adaptable para diferentes formatos.',
-          'Diseño de merchandising: camisetas, gorras, etc.',
-          'Señalética para el evento.',
-        ]
-      },
-      {
-        title: 'DONDE MUERE EL AMOR',
-        category: 'FilMinuto',
-        thumbnail: '../img/muerte.jpeg',
-        alt: 'Showcase of the Vintage Vibes custom typeface',
-        description: 'Filminuto con temática de thriller, centrado en una infidelidad que culmina en un clímax intenso. En la escena final, los colores vibrantes dominan la imagen, y el contraste entre los tonos rojo y verde aporta una fuerza visual que realza el dramatismo. Esta composición cromática hace que la mirada se dirija hacia la chica tendida en el suelo, creando un cierre impactante y profundamente cinematográfico.',
-        media: [
-          { type: 'image', src: '../img/muerte.jpeg', alt: 'Urban Beats festival crowd' },
-          { type: 'video', src: '../img/amor.mp4', alt: 'Urban Beats festival crowd' },
-        ],
-        details: [
-          'Estilo visual',
-          'Cronomatica',
-          
-        ]
-      },
-      {
-        title: '  IDENTIFICADOR VISUAL',
-        category: 'Branding',
-        thumbnail: '../img/logo.jpg',
-        alt: 'Branding for electronic music artist Electric Soul',
-        description: 'Identificador visual para un emprendimiento pequeño con presencia en Instagram, centrado en una flor de loto ubicada en el centro y acompañada de la palabra “Lotus”. El diseño transmite una energía radiante, simbolizando crecimiento, equilibrio y renovación. La flor de loto se convierte en el eje del concepto, representando el proceso constante de florecer y avanzar, incluso en medio de la adversidad.',
-        media: [
-          { type: 'image', src: '../img/logo.jpg', alt: 'Abstract gradients for Electric Soul' },
-        ],
-        details: [
-          'Diseño de logotipo .',
-          'Loto',
-          'rebelde',
-        ]
-      },
+    title: 'MAKING OFF',
+    category: 'Posters',
+    thumbnail: '/MiPortafolio/img/golpe1.jpg',
+    alt: 'Poster for Cosmic Club with vibrant cosmic theme',
+    description:
+      'El presente trabajo corresponde al making of de un filminuto, en el cual se documentó el proceso creativo y visual detrás de la producción. Las fotografías fueron cuidadosamente seleccionadas con la intención de diseñar un póster que capture la esencia de la historia y la atmósfera emocional del proyecto.',
+    media: [
+      { type: 'image', src: '/MiPortafolio/img/golpe2.jpg', alt: 'Poster for Cosmic Club with vibrant cosmic theme' },
+      { type: 'image', src: '/MiPortafolio/img/golpe3.jpg', alt: 'Cosmic Club Logo Concept' },
+      { type: 'image', src: '/MiPortafolio/img/golpe1.jpg', alt: 'Cosmic Club Logo Concept' },
+    ],
+    details: [
+      'Composición cromática',
+      'Intención estética y narrativa',
+      'Simbolismo visual',
+    ],
+  },
+  {
+    title: 'BOGOTÁ D.C',
+    category: 'Edición Poster',
+    thumbnail: '/MiPortafolio/img/bogota.jpg',
+    alt: 'Cover of Rebel Magazine with a punk rock design',
+    description:
+      'Este póster está inspirado en la ciudad de Bogotá, Colombia, una urbe vibrante y llena de contrastes que combina lo tradicional con lo moderno. La imagen retrata a un joven músico que, con su guitarra en mano, busca abrirse camino en el mundo artístico y construir su carrera con esfuerzo, pasión y perseverancia. Su actitud refleja el espíritu bogotano: trabajador, soñador y resiliente.',
+    media: [{ type: 'image', src: '/MiPortafolio/img/bogota.jpg', alt: 'Rebel Magazine Cover' }],
+    details: ['Inspiración urbana', 'Protagonismo del músico', 'Ambientacion Urbana y Punk'],
+  },
+  {
+    title: 'SILENCE PAIN',
+    category: 'Poster',
+    thumbnail: '/MiPortafolio/img/silence.jpg',
+    alt: 'Cyberpunk illustration of a futuristic city named Neon Dreams',
+    description:
+      'Este póster refleja la resiliencia de una persona ante las adversidades, mostrando a alguien que, pese a sus cicatrices, sigue creyendo que todo puede mejorar. Sus ojos vendados simbolizan esa fe ciega en el futuro, mientras que su postura erguida y brazos cruzados expresan fuerza y determinación. Sin embargo, su sombra de dolor lo acompaña siempre, recordando que la verdadera fortaleza no consiste en olvidar el sufrimiento, sino en aprender a convivir con él y transformarlo en poder.',
+    media: [{ type: 'image', src: '/MiPortafolio/img/silence.jpg', alt: 'Cyberpunk city alley' }],
+    details: ['Resiliencia', 'Fuerza y dolor', 'Colores fuertes'],
+  },
+  {
+    title: 'P0KER PICA A',
+    category: 'Fotografia',
+    thumbnail: '/MiPortafolio/img/collar1.jpg',
+    alt: 'Branding for Urban Beats music festival',
+    description:
+      'Esta fotografía surge como un ejercicio recreativo orientado a mejorar las habilidades tanto en la toma como en la edición de imágenes. Se trabajó con un diseño en blanco y negro, buscando resaltar los tonos plateados y dar protagonismo a los contrastes de luz y sombra. Este enfoque monocromático permite destacar la carta de póker, elemento central de la composición, que simboliza el azar, la estrategia y el misterio.',
+    media: [
+      { type: 'image', src: '/MiPortafolio/img/collar1.jpg', alt: 'Urban Beats festival crowd' },
+      { type: 'image', src: '/MiPortafolio/img/collar2.jpg', alt: 'Urban Beats festival crowd' },
+      { type: 'image', src: '/MiPortafolio/img/collar3.jpg', alt: 'Urban Beats festival crowd' },
+    ],
+    details: [
+      'Identidad adaptable para diferentes formatos.',
+      'Diseño de merchandising: camisetas, gorras, etc.',
+      'Señalética para el evento.',
+    ],
+  },
+  {
+    title: 'DONDE MUERE EL AMOR',
+    category: 'FilMinuto',
+    thumbnail: '/MiPortafolio/img/muerte.jpeg',
+    alt: 'Showcase of the Vintage Vibes custom typeface',
+    description:
+      'Filminuto con temática de thriller, centrado en una infidelidad que culmina en un clímax intenso. En la escena final, los colores vibrantes dominan la imagen, y el contraste entre los tonos rojo y verde aporta una fuerza visual que realza el dramatismo. Esta composición cromática hace que la mirada se dirija hacia la chica tendida en el suelo, creando un cierre impactante y profundamente cinematográfico.',
+    media: [
+      { type: 'image', src: '/MiPortafolio/img/muerte.jpeg', alt: 'Urban Beats festival crowd' },
+      { type: 'video', src: '/MiPortafolio/img/amor.mp4', alt: 'Urban Beats festival crowd' },
+    ],
+    details: ['Estilo visual', 'Cronomatica'],
+  },
+  {
+    title: 'IDENTIFICADOR VISUAL',
+    category: 'Branding',
+    thumbnail: '/MiPortafolio/img/logo.jpg',
+    alt: 'Branding for electronic music artist Electric Soul',
+    description:
+      'Identificador visual para un emprendimiento pequeño con presencia en Instagram, centrado en una flor de loto ubicada en el centro y acompañada de la palabra “Lotus”. El diseño transmite una energía radiante, simbolizando crecimiento, equilibrio y renovación. La flor de loto se convierte en el eje del concepto, representando el proceso constante de florecer y avanzar, incluso en medio de la adversidad.',
+    media: [{ type: 'image', src: '/MiPortafolio/img/logo.jpg', alt: 'Abstract gradients for Electric Soul' }],
+    details: ['Diseño de logotipo.', 'Loto', 'rebelde'],
+  },
 ];
 
 /* ------------------------------ COMPONENT ------------------------------ */

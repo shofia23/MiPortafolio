@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
@@ -15,20 +14,29 @@ import ScrollToTop from '@/components/ScrollToTop';
 function App() {
   const [isContactOpen, setContactOpen] = useState(false);
 
+  // ✅ basename asegura que la app funcione correctamente en GitHub Pages
   return (
-    <Router>
+    <Router basename="/MiPortafolio">
       <ScrollToTop />
       <Helmet>
         <title>Sofía Peña Calderón - Diseñadora Gráfica</title>
-        <meta name="description" content="Portafolio profesional de Sofía Peña Calderón, diseñadora gráfica especializada en branding, diseño editorial y arte visual contemporáneo." />
+        <meta
+          name="description"
+          content="Portafolio profesional de Sofía Peña Calderón, diseñadora gráfica especializada en branding, diseño editorial y arte visual contemporáneo."
+        />
       </Helmet>
-      
+
       <AppContent setContactOpen={setContactOpen} />
 
       <AnimatePresence mode="wait">
-        {isContactOpen && <ContactModal isOpen={isContactOpen} onClose={() => setContactOpen(false)} />}
+        {isContactOpen && (
+          <ContactModal
+            isOpen={isContactOpen}
+            onClose={() => setContactOpen(false)}
+          />
+        )}
       </AnimatePresence>
-      
+
       <Toaster />
     </Router>
   );
@@ -36,12 +44,13 @@ function App() {
 
 const AppContent = ({ setContactOpen }) => {
   const location = useLocation();
-  
+
   return (
     <>
       <Navigation onContactClick={() => setContactOpen(true)} />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
+          {/* ✅ Página inicial */}
           <Route path="/" element={<HomePage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/about" element={<AboutPage />} />
@@ -51,6 +60,5 @@ const AppContent = ({ setContactOpen }) => {
     </>
   );
 };
-
 
 export default App;
